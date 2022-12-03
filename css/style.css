@@ -3,6 +3,11 @@
   font-family: helvetica;
 }
 
+:root {
+  --pink: rgb(255, 200, 228);
+  --grey: rgb(128, 128, 128);
+}
+
 main {
   background-color: rgb(102, 178, 255);
 }
@@ -14,11 +19,11 @@ nav {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-color: rgb(128, 128, 128);
+  background-color: var(--grey);
 }
 
 .links {
-  color: rgb(255, 153, 204);
+  color: var(--pink)
 }
 
 #pic {
@@ -31,5 +36,5 @@ nav {
 }
 
 #contact {
-  background-color: rgb(128, 128, 128);
+  background-color: var(--grey);
 }
