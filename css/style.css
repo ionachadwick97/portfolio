@@ -54,18 +54,14 @@ p {
 }
 
 #pic {
-  height: 700px; 
-  width: 500px;
+  height: 900px; 
+  width: 600px;
   margin-left: 40px;
   margin-top: 40px;
   margin-bottom: 40px;
   border-radius: 100px;
   position:relative;
   border: 5px solid black;
-}
-
-#intro {
-  dispaly: flex;
   z-index: 0;
 }
 
@@ -76,8 +72,8 @@ p {
   background-color: var(--pink);
   border-radius: 20px;
   padding: 10px;
-  margin-top: 230px;
-  margin-left: 500px;
+  margin-top: 300px;
+  margin-left: 600px;
   font-size: 20px;
   border: 5px solid black;
 }
@@ -87,7 +83,7 @@ p {
 #work {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 500px 500px;
+  grid-template-rows: 800px 600px;
   grid-template-areas: 
   "woolorama woolorama"
   "thetrollhunters snekkeren";
@@ -132,14 +128,18 @@ p {
 #prevhead {
   border: 5px solid black;
   border-radius: 10px;
-  margin: 5px
+  margin: 5px;
 }
 
 .greyhead {
   background-color: var(--grey);
+  height: 70px;
+  text-align: center;
+  padding-top: 30px;
 }
 
-/*footer*/
+
+/*footer grid*/
 
 footer {
   background-color: var(--grey);
@@ -150,9 +150,36 @@ footer {
 
 
 #contact {
-  display: grid;
+  display: flex;
   font-size: 50px;
-  grid-template-columns: 500px 500px;
-  grid-template-rows: 100px 100px;
+  align-items: space-around;
+  justify-content: space-around;
   background-color: var(--grey);
+  margin-bottom: 100px;
+}
+
+/*queries*/
+
+
+@media only screen and (max-width: 1000px) {
+
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #work {
+    grid-template-rows: 500px 500px 500px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "woolorama"
+      "thetrollhunters"
+      "snekkeren"
+      ;
+  }
+
+  #contact {
+   display: flex;
+   flex-direction: column;
+  }
 }
