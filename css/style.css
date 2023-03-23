@@ -1,4 +1,4 @@
-/*whole page*/
+/*styling for the whole page*/
 
 * {
   margin: auto;
@@ -24,7 +24,7 @@ a:visited {
   background-color: var(--grey);
 }
 
-/*nav bar and about section*/
+/*styling and positioning for nav bar and about section*/
 
 nav {
   height: 200px;
@@ -76,7 +76,7 @@ p {
   float: right;
 }
 
-/*previous work grid*/
+/*previous work grid to display images and links to previous work in a neat way*/
 
 #work {
   display: grid;
@@ -137,13 +137,17 @@ p {
 }
 
 
-/*footer grid*/
+/*footer grid to display the elements correctly and add text shadow on hover*/
 
 footer {
   background-color: var(--grey);
   border: 5px solid black;
   border-radius: 10px;
   margin: 5px
+}
+
+.links:hover {
+  text-shadow: 2px 2px 5px black;
 }
 
 
@@ -156,7 +160,7 @@ footer {
   margin-bottom: 100px;
 }
 
-/*queries*/
+/*media queries to make the page responsive*/
 
 
 @media only screen and (max-width: 1000px) {
